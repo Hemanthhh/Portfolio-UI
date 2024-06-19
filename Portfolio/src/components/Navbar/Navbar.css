@@ -37,6 +37,7 @@
 }
 
 .desktopMenuBtn:hover{
+    transition-duration: 0.5s;
     background-color: #64ffda;
     color: #0a192f;
 }
