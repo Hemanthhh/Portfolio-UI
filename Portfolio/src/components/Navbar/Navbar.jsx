@@ -1,7 +1,13 @@
 import './Navbar.css'
-import { Link } from 'react-scroll'
+import {Link} from 'react-scroll'
+import Resume from '../../assets/resume/resume.pdf'
 
 function Navbar() {
+
+    const openPdfNewTab = () => {
+        window.open(Resume);
+    }
+
     return (
         <nav className="navbar">
             <div className="desktopMenu">
@@ -10,7 +16,7 @@ function Navbar() {
                 <Link className="desktopMenuListItem">Work</Link>
                 <Link className="desktopMenuListItem">Contact</Link>
             </div>
-            <button className="desktopMenuBtn">
+            <button className="desktopMenuBtn" onClick={openPdfNewTab}>
                 Resume
             </button>
         </nav>
