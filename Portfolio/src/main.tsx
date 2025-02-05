@@ -6,9 +6,9 @@ import Intro from './components/Intro/Intro'
 import Work from './components/Work/Work'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <Navbar />
-    <Intro />
-      <Work />
-  </React.StrictMode>,
+    <React.StrictMode>
+        <Navbar/>
+        <Intro/>
+        <Work/>
+    </React.StrictMode>,
 )
