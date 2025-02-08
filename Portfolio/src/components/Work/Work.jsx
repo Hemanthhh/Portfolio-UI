@@ -41,9 +41,11 @@ function Work() {
                     <ul className="WorkList">
                         <li key={item.id} className="WorkListItem">{item.startDate + "-" + item.endDate}</li>
                         <li key={item.id} className="WorkListItem">
-                            {item.company}
-                            <br/>
                             {item.role}
+                            <br/>
+                            <div className="CompanyName">
+                                {item.company}
+                            </div>
                         </li>
                     </ul>
                 ))}
