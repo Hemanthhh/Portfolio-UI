@@ -1,0 +1,52 @@
+.Title{
+    margin: 0 auto;
+    text-align: center;
+    padding: 5%;
+}
+
+
+.WorkList{
+    display: flex;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    font-size: xx-large;
+    border-bottom: 1px solid #d2c3ab;
+    font-weight: bolder;
+    /*transition: 0.1s;*/
+    position: relative;
+    overflow: hidden;
+
+}
+
+.WorkList::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #eb5939;
+    border-radius: 6px;
+    z-index: -1;
+    transition: transform 1s ease;
+    transform: scaleY(0);
+}
+
+.WorkList:hover::before {
+    transform: scaleY(1);
+}
+
+.WorkList:hover{
+    color: #0d0d0d;
+}
+.WorkListItem{
+    padding: 3rem;
+    border-top: 3px;
+    border-bottom: 3px;
+    width: 50%;
+    flex: 0 0 auto;
+}
