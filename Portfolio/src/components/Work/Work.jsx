@@ -15,21 +15,21 @@ function Work() {
             "company": "Microsoft",
             "startDate": "Mar 2022",
             "endDate": "Aug 2022",
-            "role": "Software Development Engineer"
+            "role": "SDE - I"
         },
         {
             "id": 3,
             "company": "OCM Advisory Group",
             "startDate": "Sept 2021",
             "endDate": "Dec 2021",
-            "role": "Software Engineer"
+            "role": "Software Engineering"
         },
         {
             "id": 4,
             "company": "SharkNinja",
             "startDate": "Mar 2021",
             "endDate": "Sept 2021",
-            "role": "Software Engineer - Data Platform"
+            "role": "Software Engineer - Data"
         }
     ];
 
