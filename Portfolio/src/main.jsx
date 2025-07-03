@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar'
 import Intro from './components/Intro/Intro'
 import Experience from './components/Experience/Experience'
 
+
 const App = () => {
     return (
         <React.StrictMode>
