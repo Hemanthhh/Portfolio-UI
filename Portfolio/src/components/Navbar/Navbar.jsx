@@ -13,7 +13,7 @@ function Navbar() {
             <div className="desktopMenu">
                 <Link className="desktopMenuListItem">About</Link>
                 <Link className="desktopMenuListItem">Experience</Link>
-                <Link className="desktopMenuListItem">Work</Link>
+                <Link className="desktopMenuListItem">Skills</Link>
                 <Link className="desktopMenuListItem">Contact</Link>
             </div>
             <button className="desktopMenuBtn" onClick={openPdfNewTab}>

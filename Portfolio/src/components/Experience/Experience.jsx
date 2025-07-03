@@ -1,6 +1,6 @@
-import './Work.css'
+import './Experience.css'
 
-function Work() {
+function Experience() {
 
     const workExperience = [
         {
@@ -22,7 +22,7 @@ function Work() {
             "company": "OCM Advisory Group",
             "startDate": "Sept 2021",
             "endDate": "Dec 2021",
-            "role": "Software Engineering"
+            "role": "Software Engineering Intern"
         },
         {
             "id": 4,
@@ -34,8 +34,8 @@ function Work() {
     ];
 
     return (
-        <div className="Work">
-            <h1 className="Title">Work</h1>
+        <div className="Experience">
+            <h1 className="Title">Experience</h1>
             <ul >
                 {workExperience.map((item) => (
                     <ul className="WorkList">
@@ -55,4 +55,4 @@ function Work() {
     );
 }
 
-export default Work;
+export default Experience;
