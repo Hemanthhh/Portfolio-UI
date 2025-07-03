@@ -1,12 +1,57 @@
+import { useState } from 'react'
 import './Skills.css'
 
-function Skills(){
+// Import all skill components
+import ProgrammingLanguages from './ProgrammingLanguages/ProgrammingLanguages'
+import Frameworks from './Frameworks/Frameworks'
+import Databases from './Databases/Databases'
+import OperatingSystems from './OperatingSystems/OperatingSystems'
+import VersionControl from './VersionControl/VersionControl'
+import Tools from './Tools/Tools'
+import CloudServices from './CloudServices/CloudServices'
+
+function Skills() {
+    const [selectedSkill, setSelectedSkill] = useState('programming-languages')
 
     const skills = [
-        { id: 'skill1', name: 'Details for Item 1', component: <ComponentA /> },
-        { id: 'skill2', name: 'Information for Item 2', component: <ComponentB /> },
-        { id: 'skill3', name: 'Settings for Item 3', component: <ComponentC /> },
+        { id: 'programming-languages', name: 'Programming Languages', component: <ProgrammingLanguages /> },
+        { id: 'frameworks', name: 'Frameworks', component: <Frameworks /> },
+        { id: 'databases', name: 'Databases', component: <Databases /> },
+        { id: 'operating-systems', name: 'Operating Systems', component: <OperatingSystems /> },
+        { id: 'version-control', name: 'Version Control', component: <VersionControl /> },
+        { id: 'tools', name: 'Tools', component: <Tools /> },
+        { id: 'cloud-services', name: 'Cloud Services', component: <CloudServices /> },
     ]
+
+    const handleSkillClick = (skillId) => {
+        setSelectedSkill(skillId)
+    }
+
+    const selectedComponent = skills.find(skill => skill.id === selectedSkill)?.component
+
+    return (
+        <div className="Skills">
+            <h1 className="Title">Skills</h1>
+            <div className="skills-container">
+                <div className="skills-sidebar">
+                    <ul className="skills-list">
+                        {skills.map((skill) => (
+                            <li 
+                                key={skill.id}
+                                className={`skills-list-item ${selectedSkill === skill.id ? 'active' : ''}`}
+                                onClick={() => handleSkillClick(skill.id)}
+                            >
+                                {skill.name}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="skills-content">
+                    {selectedComponent}
+                </div>
+            </div>
+        </div>
+    )
 }
 
-export default Skills;
+export default Skills

@@ -10,11 +10,15 @@
     margin: 0 auto;
     text-align: center;
     padding: 5%;
+    color: #b7ab98;
+    font-size: 2.5rem;
+    font-weight: 1000;
 }
 
 .CompanyName{
     font-size: 1rem;
     font-weight: normal;
+    color: #b7ab98;
 }
 
 
@@ -28,10 +32,10 @@
     font-size: 2rem;
     font-weight: 1000;
     border-bottom: 1px solid #d2c3ab;
-    /*transition: 0.1s;*/
+    color: #b7ab98;
     position: relative;
     overflow: hidden;
-
+    transition: all 0.3s ease;
 }
 
 .WorkList::before {
@@ -55,6 +59,7 @@
 
 .WorkList:hover{
     color: #0d0d0d;
+    transform: translateY(-2px);
 }
 .WorkListItem{
     padding: 3rem;
@@ -62,4 +67,131 @@
     border-bottom: 3px;
     width: 50%;
     flex: 0 0 auto;
+    color: #b7ab98;
+}
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+    .Title {
+        font-size: 3rem;
+        padding: 6%;
+    }
+    
+    .WorkList {
+        padding-left: 6rem;
+        padding-right: 6rem;
+        font-size: 2.2rem;
+    }
+    
+    .WorkListItem {
+        padding: 3.5rem;
+    }
+    
+    .CompanyName {
+        font-size: 1.1rem;
+    }
+}
+
+/* Medium screens (768px to 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .Title {
+        font-size: 2.2rem;
+        padding: 4%;
+    }
+    
+    .WorkList {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        font-size: 1.8rem;
+    }
+    
+    .WorkListItem {
+        padding: 2.5rem;
+    }
+    
+    .CompanyName {
+        font-size: 0.9rem;
+    }
+}
+
+/* Small screens (tablets - 481px to 767px) */
+@media (max-width: 767px) and (min-width: 481px) {
+    .Experience {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .Title {
+        font-size: 2rem;
+        padding: 3%;
+    }
+    
+    .WorkList {
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1.5rem;
+    }
+    
+    .WorkListItem {
+        width: 100%;
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    .CompanyName {
+        font-size: 0.8rem;
+    }
+}
+
+/* Mobile screens (up to 480px) */
+@media (max-width: 480px) {
+    .Experience {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .Title {
+        font-size: 1.8rem;
+        padding: 2%;
+    }
+    
+    .WorkList {
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    .WorkListItem {
+        width: 100%;
+        padding: 1.5rem;
+        text-align: center;
+    }
+    
+    .CompanyName {
+        font-size: 0.7rem;
+    }
+}
+
+/* Extra small screens (up to 320px) */
+@media (max-width: 320px) {
+    .Title {
+        font-size: 1.5rem;
+        padding: 1%;
+    }
+    
+    .WorkList {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    .WorkListItem {
+        padding: 1rem;
+    }
+    
+    .CompanyName {
+        font-size: 0.6rem;
+    }
 }

@@ -4,7 +4,7 @@ import './index.css'
 import Navbar from './components/Navbar/Navbar'
 import Intro from './components/Intro/Intro'
 import Experience from './components/Experience/Experience'
-
+import Skills from './components/Skills/Skills'
 
 const App = () => {
     return (
@@ -12,6 +12,7 @@ const App = () => {
             <Navbar/>
             <Intro/>
             <Experience/>
+            <Skills/>
         </React.StrictMode>
     )
 }
