@@ -34,23 +34,24 @@ function Experience() {
     ];
 
     return (
-        <div className="Experience">
+        <div className="Experience" id="experience">
             <h1 className="Title">Experience</h1>
-            <ul >
+            <ul>
                 {workExperience.map((item) => (
-                    <ul className="WorkList">
-                        <li key={item.id} className="WorkListItem">{item.startDate + "-" + item.endDate}</li>
-                        <li key={item.id} className="WorkListItem">
-                            {item.role}
-                            <br/>
-                            <div className="CompanyName">
-                                {item.company}
+                    <li key={item.id} className="WorkListItem">
+                        <div className="WorkList">
+                            <div className="WorkListItem">{item.startDate + "-" + item.endDate}</div>
+                            <div className="WorkListItem">
+                                {item.role}
+                                <br />
+                                <div className="CompanyName">
+                                    {item.company}
+                                </div>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </li>
                 ))}
             </ul>
-
         </div>
     );
 }

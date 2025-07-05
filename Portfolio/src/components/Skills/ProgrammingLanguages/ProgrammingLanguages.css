@@ -19,96 +19,43 @@
     text-align: center;
 }
 
-.languages-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+.languages-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
     margin-top: 2rem;
 }
 
-.language-card {
-    background: linear-gradient(135deg, #eb5939 0%, #d2c3ab 100%);
-    border-radius: 6px;
-    padding: 1.5rem;
-    text-align: center;
-    color: #0d0d0d;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #d2c3ab;
-}
-
-.language-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, #d2c3ab 0%, #eb5939 100%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 1;
-}
-
-.language-card:hover::before {
-    opacity: 1;
-}
-
-.language-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-}
-
-.language-card > * {
-    position: relative;
-    z-index: 2;
+.language-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #b7ab98;
+    font-size: 1.1rem;
 }
 
 .language-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    display: block;
+    font-size: 1.5rem;
 }
 
-.language-card h3 {
-    margin: 0 0 1rem 0;
-    font-size: 1.3rem;
-    font-weight: 1000;
-}
-
-.level-badge {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 1000;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: #0d0d0d;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    background-color: #f8f9fa;
-    border: 1px solid #d2c3ab;
+.language-name {
+    font-weight: 500;
 }
 
 /* Large screens (1200px and up) */
 @media (min-width: 1200px) {
-    .languages-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
+    .languages-list {
+        gap: 1.5rem;
     }
     
-    .language-card {
-        padding: 2rem;
+    .language-item {
+        font-size: 1.2rem;
     }
     
     .language-icon {
-        font-size: 3.5rem;
-    }
-    
-    .language-card h3 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     
     .programming-languages h1 {
@@ -122,21 +69,16 @@
 
 /* Medium screens (768px to 1199px) */
 @media (max-width: 1199px) and (min-width: 768px) {
-    .languages-grid {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    .languages-list {
         gap: 1.2rem;
     }
     
-    .language-card {
-        padding: 1.2rem;
+    .language-item {
+        font-size: 1.1rem;
     }
     
     .language-icon {
-        font-size: 2.5rem;
-    }
-    
-    .language-card h3 {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
     
     .programming-languages h1 {
@@ -146,21 +88,16 @@
 
 /* Small screens (tablets - 481px to 767px) */
 @media (max-width: 767px) and (min-width: 481px) {
-    .languages-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    .languages-list {
         gap: 1rem;
     }
     
-    .language-card {
-        padding: 1rem;
+    .language-item {
+        font-size: 1rem;
     }
     
     .language-icon {
-        font-size: 2rem;
-    }
-    
-    .language-card h3 {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
     
     .programming-languages h1 {
@@ -170,11 +107,6 @@
     .description {
         font-size: 1rem;
     }
-    
-    .level-badge {
-        font-size: 0.8rem;
-        padding: 0.4rem 0.8rem;
-    }
 }
 
 /* Mobile screens (up to 480px) */
@@ -183,72 +115,49 @@
         padding: 0.5rem;
     }
     
-    .languages-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    .languages-list {
         gap: 0.8rem;
         margin-top: 1rem;
     }
     
-    .language-card {
-        padding: 0.8rem;
-        border-radius: 4px;
-    }
-    
-    .language-icon {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-    }
-    
-    .language-card h3 {
+    .language-item {
         font-size: 0.9rem;
-        margin-bottom: 0.5rem;
-    }
-    
-    .programming-languages h1 {
-        font-size: 1.8rem;
-        margin-bottom: 0.5rem;
-    }
-    
-    .description {
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
-    }
-    
-    .level-badge {
-        font-size: 0.7rem;
-        padding: 0.3rem 0.6rem;
-    }
-}
-
-/* Extra small screens (up to 320px) */
-@media (max-width: 320px) {
-    .languages-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 0.5rem;
-    }
-    
-    .language-card {
-        padding: 0.6rem;
+        padding: 0.4rem 0.8rem;
     }
     
     .language-icon {
         font-size: 1.2rem;
     }
     
-    .language-card h3 {
+    .programming-languages h1 {
+        font-size: 1.8rem;
+    }
+    
+    .description {
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra small screens (up to 320px) */
+@media (max-width: 320px) {
+    .languages-list {
+        gap: 0.6rem;
+    }
+    
+    .language-item {
         font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+    
+    .language-icon {
+        font-size: 1rem;
     }
     
     .programming-languages h1 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     
     .description {
         font-size: 0.8rem;
-    }
-    
-    .level-badge {
-        font-size: 0.6rem;
-        padding: 0.2rem 0.5rem;
     }
 } 

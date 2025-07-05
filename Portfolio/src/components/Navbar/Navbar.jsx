@@ -1,5 +1,5 @@
 import './Navbar.css'
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll'
 import Resume from '../../assets/resume/resume.pdf'
 
 function Navbar() {
@@ -11,10 +11,10 @@ function Navbar() {
     return (
         <nav className="navbar">
             <div className="desktopMenu">
-                <Link className="desktopMenuListItem">About</Link>
-                <Link className="desktopMenuListItem">Experience</Link>
-                <Link className="desktopMenuListItem">Skills</Link>
-                <Link className="desktopMenuListItem">Contact</Link>
+                <Link to="intro" smooth={true} offset={-80} className="desktopMenuListItem">About</Link>
+                <Link to="experience" smooth={true} offset={-80} className="desktopMenuListItem">Experience</Link>
+                <Link to="skills" smooth={true} offset={-80} className="desktopMenuListItem">Skills</Link>
+                <Link to="contact" smooth={true} offset={-80} className="desktopMenuListItem">Contact</Link>
             </div>
             <button className="desktopMenuBtn" onClick={openPdfNewTab}>
                 Resume

@@ -1,42 +1,32 @@
 import './ProgrammingLanguages.css'
+import { FaJava, FaPython, FaJs, FaGolang } from "react-icons/fa6"
+import { SiDart, SiTypescript } from "react-icons/si"
 
 function ProgrammingLanguages() {
     const languages = [
-        { name: 'JavaScript', level: 'Advanced', icon: '⚡' },
-        { name: 'Python', level: 'Intermediate', icon: '🐍' },
-        { name: 'Java', level: 'Intermediate', icon: '☕' },
-        { name: 'Go', level: 'Beginner', icon: '🐹' },
+        { name: 'Python', icon: FaPython },
+        { name: 'Java', icon: FaJava },
+        { name: 'JavaScript', icon: FaJs },
+        { name: 'TypeScript', icon: SiTypescript },
+        { name: 'Go', icon: FaGolang },
+        { name: 'Dart', icon: SiDart },
     ]
-
-    const getLevelColor = (level) => {
-        switch (level) {
-            case 'Advanced': return '#28a745'
-            case 'Intermediate': return '#ffc107'
-            case 'Beginner': return '#dc3545'
-            default: return '#6c757d'
-        }
-    }
 
     return (
         <div className="programming-languages">
-            <h1>Programming Languages</h1>
-            <p className="description">
-                A comprehensive overview of my programming language skills and proficiency levels.
-            </p>
-            
-            <div className="languages-grid">
-                {languages.map((language, index) => (
-                    <div key={index} className="language-card">
-                        <div className="language-icon">{language.icon}</div>
-                        <h3>{language.name}</h3>
-                        <div className="level-badge" style={{ backgroundColor: getLevelColor(language.level) }}>
-                            {language.level}
+            <div className="languages-list">
+                {languages.map((language, index) => {
+                    const IconComponent = language.icon;
+                    return (
+                        <div key={index} className="language-item">
+                            <span className="language-icon"><IconComponent /></span>
+                            <span className="language-name">{language.name}</span>
                         </div>
-                    </div>
-                ))}
+                    );
+                })}
             </div>
         </div>
     )
 }
 
-export default ProgrammingLanguages
+export default ProgrammingLanguages;

@@ -1,9 +1,9 @@
 .Experience {
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    width: 100%;
     max-width: 85rem;
     margin: 0 auto;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .Title{
@@ -21,14 +21,13 @@
     color: #b7ab98;
 }
 
-
 .WorkList{
     display: flex;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
     list-style: none;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 10px;
     font-size: 2rem;
     font-weight: 1000;
     border-bottom: 1px solid #d2c3ab;
@@ -36,6 +35,8 @@
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .WorkList::before {
@@ -61,30 +62,39 @@
     color: #0d0d0d;
     transform: translateY(-2px);
 }
+
 .WorkListItem{
-    padding: 3rem;
+    padding: 0 1rem 1.5rem 1rem;
     border-top: 3px;
     border-bottom: 3px;
-    width: 50%;
-    flex: 0 0 auto;
+    flex: 1;
     color: #b7ab98;
+}
+
+.WorkListItem:first-child {
+    text-align: left;
+}
+
+.WorkListItem:last-child {
+    text-align: right;
 }
 
 /* Large screens (1200px and up) */
 @media (min-width: 1200px) {
     .Title {
         font-size: 3rem;
-        padding: 6%;
+        padding: 4%;
     }
     
     .WorkList {
-        padding-left: 6rem;
-        padding-right: 6rem;
+        padding-left: 2vw;
+        padding-right: 2vw;
         font-size: 2.2rem;
+        max-width: 1200px;
     }
     
     .WorkListItem {
-        padding: 3.5rem;
+        padding: 0 1.5rem 2rem 1.5rem;
     }
     
     .CompanyName {
@@ -96,17 +106,18 @@
 @media (max-width: 1199px) and (min-width: 768px) {
     .Title {
         font-size: 2.2rem;
-        padding: 4%;
+        padding: 3%;
     }
     
     .WorkList {
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 2vw;
+        padding-right: 2vw;
         font-size: 1.8rem;
+        max-width: 98vw;
     }
     
     .WorkListItem {
-        padding: 2.5rem;
+        padding: 0 0.8rem 1.2rem 0.8rem;
     }
     
     .CompanyName {
@@ -123,20 +134,21 @@
     
     .Title {
         font-size: 2rem;
-        padding: 3%;
+        padding: 2%;
     }
     
     .WorkList {
         flex-direction: column;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        align-items: stretch;
+        padding-left: 2vw;
+        padding-right: 2vw;
         font-size: 1.5rem;
+        max-width: 99vw;
     }
     
     .WorkListItem {
-        width: 100%;
-        padding: 2rem;
-        text-align: center;
+        padding: 0 0.5rem 1rem 0.5rem;
+        text-align: center !important;
     }
     
     .CompanyName {
@@ -153,20 +165,21 @@
     
     .Title {
         font-size: 1.8rem;
-        padding: 2%;
+        padding: 1.5%;
     }
     
     .WorkList {
         flex-direction: column;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        align-items: stretch;
+        padding-left: 2vw;
+        padding-right: 2vw;
         font-size: 1.2rem;
+        max-width: 100vw;
     }
     
     .WorkListItem {
-        width: 100%;
-        padding: 1.5rem;
-        text-align: center;
+        padding: 0 0.2rem 0.7rem 0.2rem;
+        text-align: center !important;
     }
     
     .CompanyName {
@@ -182,13 +195,14 @@
     }
     
     .WorkList {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        padding-left: 1vw;
+        padding-right: 1vw;
         font-size: 1rem;
+        max-width: 100vw;
     }
     
     .WorkListItem {
-        padding: 1rem;
+        padding: 0 0.1rem 0.4rem 0.1rem;
     }
     
     .CompanyName {

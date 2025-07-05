@@ -5,123 +5,79 @@
 
 .databases h1 {
     color: #b7ab98;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: 2.5rem;
     font-weight: 1000;
-    text-align: center;
-}
-
-.description {
-    color: #b7ab98;
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    line-height: 1.6;
     text-align: center;
 }
 
 .type-section {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .type-section h2 {
-    color: #b7ab98;
+    color: #eb5939;
     font-size: 1.8rem;
-    font-weight: 1000;
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #eb5939;
-    display: inline-block;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
-.databases-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+.databases-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5rem;
 }
 
-.database-card {
-    background: linear-gradient(135deg, #eb5939 0%, #d2c3ab 100%);
-    border-radius: 6px;
-    padding: 1.5rem;
-    text-align: center;
-    color: #0d0d0d;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #d2c3ab;
-}
-
-.database-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, #d2c3ab 0%, #eb5939 100%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 1;
-}
-
-.database-card:hover::before {
-    opacity: 1;
-}
-
-.database-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-}
-
-.database-card > * {
-    position: relative;
-    z-index: 2;
+.database-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
 }
 
 .database-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #eb5939;
+    background-color: rgba(235, 89, 57, 0.1);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    border: 1px solid #eb5939;
 }
 
-.database-card h3 {
-    margin: 0 0 1rem 0;
-    font-size: 1.2rem;
-    font-weight: 1000;
+.database-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #b7ab98;
 }
 
-.level-badge {
-    display: inline-block;
-    padding: 0.4rem 0.8rem;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    font-weight: 1000;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: #0d0d0d;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    background-color: #f8f9fa;
-    border: 1px solid #d2c3ab;
+.skill-icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    display: inline-flex;
+    vertical-align: middle;
 }
 
 /* Large screens (1200px and up) */
 @media (min-width: 1200px) {
-    .databases-grid {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    .databases-list {
         gap: 2rem;
     }
     
-    .database-card {
-        padding: 2rem;
+    .database-item {
+        padding: 0.8rem 1.5rem;
     }
     
     .database-icon {
-        font-size: 3rem;
+        font-size: 1.3rem;
+        padding: 0.4rem 0.8rem;
     }
     
-    .database-card h3 {
-        font-size: 1.4rem;
+    .database-name {
+        font-size: 1.2rem;
     }
     
     .databases h1 {
@@ -129,31 +85,27 @@
     }
     
     .type-section h2 {
-        font-size: 2.2rem;
-    }
-    
-    .description {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 }
 
 /* Medium screens (768px to 1199px) */
 @media (max-width: 1199px) and (min-width: 768px) {
-    .databases-grid {
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        gap: 1.2rem;
+    .databases-list {
+        gap: 1.5rem;
     }
     
-    .database-card {
-        padding: 1.2rem;
+    .database-item {
+        padding: 0.6rem 1.2rem;
     }
     
     .database-icon {
-        font-size: 2.2rem;
+        font-size: 1rem;
+        padding: 0.3rem 0.6rem;
     }
     
-    .database-card h3 {
-        font-size: 1.1rem;
+    .database-name {
+        font-size: 0.9rem;
     }
     
     .databases h1 {
@@ -167,21 +119,21 @@
 
 /* Small screens (tablets - 481px to 767px) */
 @media (max-width: 767px) and (min-width: 481px) {
-    .databases-grid {
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-        gap: 1rem;
+    .databases-list {
+        gap: 1.2rem;
     }
     
-    .database-card {
-        padding: 1rem;
+    .database-item {
+        padding: 0.5rem 1rem;
     }
     
     .database-icon {
-        font-size: 1.8rem;
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
     }
     
-    .database-card h3 {
-        font-size: 1rem;
+    .database-name {
+        font-size: 0.8rem;
     }
     
     .databases h1 {
@@ -191,15 +143,6 @@
     .type-section h2 {
         font-size: 1.4rem;
     }
-    
-    .description {
-        font-size: 1rem;
-    }
-    
-    .level-badge {
-        font-size: 0.7rem;
-        padding: 0.3rem 0.6rem;
-    }
 }
 
 /* Mobile screens (up to 480px) */
@@ -208,68 +151,50 @@
         padding: 0.5rem;
     }
     
-    .databases-grid {
-        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-        gap: 0.8rem;
+    .databases-list {
+        gap: 1rem;
     }
     
-    .database-card {
-        padding: 0.8rem;
-        border-radius: 4px;
+    .database-item {
+        padding: 0.4rem 0.8rem;
     }
     
     .database-icon {
-        font-size: 1.4rem;
-        margin-bottom: 0.5rem;
+        font-size: 0.8rem;
+        padding: 0.2rem 0.4rem;
     }
     
-    .database-card h3 {
-        font-size: 0.8rem;
-        margin-bottom: 0.5rem;
+    .database-name {
+        font-size: 0.7rem;
     }
     
     .databases h1 {
         font-size: 1.8rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
     }
     
     .type-section h2 {
         font-size: 1.2rem;
-        margin-bottom: 1rem;
-    }
-    
-    .description {
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
-    }
-    
-    .level-badge {
-        font-size: 0.6rem;
-        padding: 0.2rem 0.5rem;
-    }
-    
-    .type-section {
-        margin-bottom: 2rem;
     }
 }
 
 /* Extra small screens (up to 320px) */
 @media (max-width: 320px) {
-    .databases-grid {
-        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-        gap: 0.5rem;
+    .databases-list {
+        gap: 0.8rem;
     }
     
-    .database-card {
-        padding: 0.6rem;
+    .database-item {
+        padding: 0.3rem 0.6rem;
     }
     
     .database-icon {
-        font-size: 1.1rem;
+        font-size: 0.7rem;
+        padding: 0.2rem 0.3rem;
     }
     
-    .database-card h3 {
-        font-size: 0.7rem;
+    .database-name {
+        font-size: 0.6rem;
     }
     
     .databases h1 {
@@ -278,14 +203,5 @@
     
     .type-section h2 {
         font-size: 1rem;
-    }
-    
-    .description {
-        font-size: 0.8rem;
-    }
-    
-    .level-badge {
-        font-size: 0.5rem;
-        padding: 0.15rem 0.4rem;
     }
 } 

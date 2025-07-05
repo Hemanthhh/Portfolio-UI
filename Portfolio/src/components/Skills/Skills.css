@@ -49,38 +49,11 @@
     margin-bottom: 0.5rem;
     border-radius: 6px;
     cursor: pointer;
-    transition: all 0.3s ease;
     font-weight: 1000;
     font-size: 1.5rem;
     color: #b7ab98;
     border: 1px solid transparent;
-    position: relative;
-    overflow: hidden;
     background-color: transparent;
-}
-
-.skills-list-item::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: #eb5939;
-    border-radius: 6px;
-    z-index: -1;
-    transition: transform 1s ease;
-    transform: scaleY(0);
-}
-
-.skills-list-item:hover::before {
-    transform: scaleY(1);
-}
-
-.skills-list-item:hover {
-    color: #0d0d0d;
-    transform: translateX(5px);
 }
 
 .skills-list-item.active {
@@ -88,10 +61,6 @@
     color: #0d0d0d;
     border-color: #eb5939;
     box-shadow: 0 2px 8px rgba(235, 89, 57, 0.3);
-}
-
-.skills-list-item.active::before {
-    transform: scaleY(1);
 }
 
 .skills-content {

@@ -30,13 +30,13 @@ function Skills() {
     const selectedComponent = skills.find(skill => skill.id === selectedSkill)?.component
 
     return (
-        <div className="Skills">
+        <div className="skills" id="skills">
             <h1 className="Title">Skills</h1>
             <div className="skills-container">
                 <div className="skills-sidebar">
                     <ul className="skills-list">
                         {skills.map((skill) => (
-                            <li 
+                            <li
                                 key={skill.id}
                                 className={`skills-list-item ${selectedSkill === skill.id ? 'active' : ''}`}
                                 onClick={() => handleSkillClick(skill.id)}
