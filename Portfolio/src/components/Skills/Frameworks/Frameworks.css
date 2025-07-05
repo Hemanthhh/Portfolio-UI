@@ -59,6 +59,25 @@
     margin-right: 0.5rem;
     display: inline-flex;
     vertical-align: middle;
+    color: #b7ab98;
+}
+
+.skill-icon svg {
+    color: #b7ab98;
+}
+
+.skill-icon * {
+    color: #b7ab98 !important;
+}
+
+/* Specifically target AWS icons to override their built-in colors */
+.skill-icon svg path,
+.skill-icon svg rect,
+.skill-icon svg circle,
+.skill-icon svg polygon,
+.skill-icon svg g {
+    fill: #b7ab98 !important;
+    color: #b7ab98 !important;
 }
 
 /* Large screens (1200px and up) */

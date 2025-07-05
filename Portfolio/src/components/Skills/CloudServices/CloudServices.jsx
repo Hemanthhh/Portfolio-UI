@@ -1,6 +1,12 @@
 import './CloudServices.css'
 import { FaCloud } from "react-icons/fa"
-import { SiAwslambda } from "react-icons/si"
+import {
+    SiAwslambda, SiAmazonec2, SiAmazondynamodb, SiAmazonroute53,
+    SiAmazonapigateway, SiAmazoncloudwatch, SiAmazondocumentdb, SiAmazonecs,
+    SiAmazoneks, SiAmazonelasticache, SiAmazoniam, SiAmazonrds, SiAmazonredshift,
+    SiAmazons3, SiAmazonsimpleemailservice, SiAmazonsqs,
+} from "react-icons/si"
+import { ResourceAmazonRDSBlueGreenDeployments, ResourceAmazonSageMakerCanvas } from "aws-react-icons"
 
 const AzureFunctionsIcon = (props) => (
     <svg
@@ -57,7 +63,24 @@ const AzureKubernetesServiceIcon = (props) => (
 
 function CloudServices() {
     const cloudServices = [
-        { name: 'AWSLambda', icon: SiAwslambda },
+        { name: 'AWS S3', icon: SiAmazons3 },
+        { name: 'AWS EC2', icon: SiAmazonec2 },
+        { name: 'AWS Lambda', icon: SiAwslambda },
+        { name: 'AWS API Gateway', icon: SiAmazonapigateway },
+        { name: 'AWS RDS', icon: SiAmazonrds },
+        { name: 'AWS CodeDeploy', icon: ResourceAmazonRDSBlueGreenDeployments },
+        { name: 'AWS Sagemaker', icon: ResourceAmazonSageMakerCanvas },
+        { name: 'AWS EKS', icon: SiAmazoneks },
+        { name: 'AWS ECS', icon: SiAmazonecs },
+        { name: 'AWS SQS', icon: SiAmazonsqs },
+        { name: 'AWS DynamoDB', icon: SiAmazondynamodb },
+        { name: 'AWS Redshift', icon: SiAmazonredshift },
+        { name: 'AWS Elasticache', icon: SiAmazonelasticache },
+        { name: 'AWS CloudWatch', icon: SiAmazoncloudwatch },
+        { name: 'AWS Route 53', icon: SiAmazonroute53 },
+        { name: 'AWS DocumentDB', icon: SiAmazondocumentdb },
+        { name: 'AWS Simple Email Service', icon: SiAmazonsimpleemailservice },
+        { name: 'AWS IAM', icon: SiAmazoniam },
         { name: 'Azure Functions', icon: AzureFunctionsIcon },
         { name: 'Azure Blob Storage', icon: AzureBlobStorageIcon },
         { name: 'Azure Kubernetes Service', icon: AzureKubernetesServiceIcon },
