@@ -30,25 +30,15 @@ function Skills() {
         setIsDropdownOpen(false)
     }
 
-    const toggleDropdown = () => {
-        setIsDropdownOpen(!isDropdownOpen)
-    }
 
     const selectedComponent = skills.find(skill => skill.id === selectedSkill)?.component
-    const selectedSkillName = skills.find(skill => skill.id === selectedSkill)?.name
 
     return (
         <div className="skills" id="skills">
             <h1 className="Title">Skills</h1>
             <div className="skills-container">
                 <div className="skills-sidebar">
-                    {/* Mobile Dropdown Toggle */}
-                    <div className="skills-dropdown-toggle" onClick={toggleDropdown}>
-                        <span>{selectedSkillName}</span>
-                        <span className={`dropdown-arrow ${isDropdownOpen ? 'open' : ''}`}>▼</span>
-                    </div>
-
-                    <ul className={`skills-list ${isDropdownOpen ? 'dropdown-open' : ''}`}>
+                    <ul className={"skills-list"}>
                         {skills.map((skill) => (
                             <li
                                 key={skill.id}

@@ -1,6 +1,11 @@
 .cloud-services {
     padding: 1rem;
     color: #b7ab98;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
 }
 
 .cloud-services h1 {
@@ -24,6 +29,8 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
     margin-top: 2rem;
+    justify-items: center;
+    align-items: center;
 }
 
 .cloud-card {
@@ -35,8 +42,6 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     border: 1px solid #d2c3ab;
 }
-
-
 
 .cloud-icon {
     font-size: 3rem;
@@ -115,23 +120,23 @@
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2rem;
     }
-    
+
     .cloud-card {
         padding: 2rem;
     }
-    
+
     .cloud-icon {
         font-size: 3.5rem;
     }
-    
+
     .cloud-card h3 {
         font-size: 1.5rem;
     }
-    
+
     .cloud-services h1 {
         font-size: 3rem;
     }
-    
+
     .description {
         font-size: 1.2rem;
     }
@@ -143,19 +148,19 @@
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 1.2rem;
     }
-    
+
     .cloud-card {
         padding: 1.2rem;
     }
-    
+
     .cloud-icon {
         font-size: 2.5rem;
     }
-    
+
     .cloud-card h3 {
         font-size: 1.2rem;
     }
-    
+
     .cloud-services h1 {
         font-size: 2.2rem;
     }
@@ -167,32 +172,32 @@
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         gap: 1rem;
     }
-    
+
     .cloud-card {
         padding: 1rem;
     }
-    
+
     .cloud-icon {
         font-size: 2rem;
     }
-    
+
     .cloud-card h3 {
         font-size: 1.1rem;
     }
-    
+
     .cloud-services h1 {
         font-size: 2rem;
     }
-    
+
     .description {
         font-size: 1rem;
     }
-    
+
     .level-badge {
         font-size: 0.8rem;
         padding: 0.4rem 0.8rem;
     }
-    
+
     .service-tag {
         font-size: 0.7rem;
         padding: 0.2rem 0.5rem;
@@ -204,48 +209,48 @@
     .cloud-services {
         padding: 0.5rem;
     }
-    
+
     .cloud-grid {
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         gap: 0.8rem;
         margin-top: 1rem;
     }
-    
+
     .cloud-card {
         padding: 0.8rem;
         border-radius: 4px;
     }
-    
+
     .cloud-icon {
         font-size: 1.5rem;
         margin-bottom: 0.5rem;
     }
-    
+
     .cloud-card h3 {
         font-size: 0.9rem;
         margin-bottom: 0.5rem;
     }
-    
+
     .cloud-services h1 {
         font-size: 1.8rem;
         margin-bottom: 0.5rem;
     }
-    
+
     .description {
         font-size: 0.9rem;
         margin-bottom: 1rem;
     }
-    
+
     .level-badge {
         font-size: 0.7rem;
         padding: 0.3rem 0.6rem;
         margin-bottom: 0.5rem;
     }
-    
+
     .services-list {
         gap: 0.3rem;
     }
-    
+
     .service-tag {
         font-size: 0.6rem;
         padding: 0.2rem 0.4rem;
@@ -258,32 +263,32 @@
         grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
         gap: 0.5rem;
     }
-    
+
     .cloud-card {
         padding: 0.6rem;
     }
-    
+
     .cloud-icon {
         font-size: 1.2rem;
     }
-    
+
     .cloud-card h3 {
         font-size: 0.8rem;
     }
-    
+
     .cloud-services h1 {
         font-size: 1.5rem;
     }
-    
+
     .description {
         font-size: 0.8rem;
     }
-    
+
     .level-badge {
         font-size: 0.6rem;
         padding: 0.2rem 0.5rem;
     }
-    
+
     .service-tag {
         font-size: 0.5rem;
         padding: 0.15rem 0.3rem;
@@ -309,4 +314,4 @@
 
 .cloud-name {
     font-weight: 500;
-} 
+}

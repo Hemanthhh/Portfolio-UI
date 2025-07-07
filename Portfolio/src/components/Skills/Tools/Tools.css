@@ -1,6 +1,11 @@
 .tools {
     padding: 1rem;
     color: #b7ab98;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
 }
 
 .tools h1 {
@@ -37,6 +42,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
 }
 
 .tool-card {
@@ -48,8 +55,6 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     border: 1px solid #d2c3ab;
 }
-
-
 
 .tool-icon {
     font-size: 2.5rem;
@@ -109,27 +114,27 @@
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 2rem;
     }
-    
+
     .tool-card {
         padding: 2rem;
     }
-    
+
     .tool-icon {
         font-size: 3rem;
     }
-    
+
     .tool-card h3 {
         font-size: 1.4rem;
     }
-    
+
     .tools h1 {
         font-size: 3rem;
     }
-    
+
     .category-section h2 {
         font-size: 2.2rem;
     }
-    
+
     .description {
         font-size: 1.2rem;
     }
@@ -141,23 +146,23 @@
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
         gap: 1.2rem;
     }
-    
+
     .tool-card {
         padding: 1.2rem;
     }
-    
+
     .tool-icon {
         font-size: 2.2rem;
     }
-    
+
     .tool-card h3 {
         font-size: 1.1rem;
     }
-    
+
     .tools h1 {
         font-size: 2.2rem;
     }
-    
+
     .category-section h2 {
         font-size: 1.6rem;
     }
@@ -169,31 +174,31 @@
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         gap: 1rem;
     }
-    
+
     .tool-card {
         padding: 1rem;
     }
-    
+
     .tool-icon {
         font-size: 1.8rem;
     }
-    
+
     .tool-card h3 {
         font-size: 1rem;
     }
-    
+
     .tools h1 {
         font-size: 2rem;
     }
-    
+
     .category-section h2 {
         font-size: 1.4rem;
     }
-    
+
     .description {
         font-size: 1rem;
     }
-    
+
     .level-badge {
         font-size: 0.7rem;
         padding: 0.3rem 0.6rem;
@@ -205,47 +210,47 @@
     .tools {
         padding: 0.5rem;
     }
-    
+
     .tools-grid {
         grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
         gap: 0.8rem;
     }
-    
+
     .tool-card {
         padding: 0.8rem;
         border-radius: 4px;
     }
-    
+
     .tool-icon {
         font-size: 1.4rem;
         margin-bottom: 0.5rem;
     }
-    
+
     .tool-card h3 {
         font-size: 0.8rem;
         margin-bottom: 0.5rem;
     }
-    
+
     .tools h1 {
         font-size: 1.8rem;
         margin-bottom: 0.5rem;
     }
-    
+
     .category-section h2 {
         font-size: 1.2rem;
         margin-bottom: 1rem;
     }
-    
+
     .description {
         font-size: 0.9rem;
         margin-bottom: 1rem;
     }
-    
+
     .level-badge {
         font-size: 0.6rem;
         padding: 0.2rem 0.5rem;
     }
-    
+
     .category-section {
         margin-bottom: 2rem;
     }
@@ -257,31 +262,31 @@
         grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
         gap: 0.5rem;
     }
-    
+
     .tool-card {
         padding: 0.6rem;
     }
-    
+
     .tool-icon {
         font-size: 1.1rem;
     }
-    
+
     .tool-card h3 {
         font-size: 0.7rem;
     }
-    
+
     .tools h1 {
         font-size: 1.5rem;
     }
-    
+
     .category-section h2 {
         font-size: 1rem;
     }
-    
+
     .description {
         font-size: 0.8rem;
     }
-    
+
     .level-badge {
         font-size: 0.5rem;
         padding: 0.15rem 0.4rem;
@@ -307,4 +312,4 @@
 
 .tool-name {
     font-weight: 500;
-} 
+}
