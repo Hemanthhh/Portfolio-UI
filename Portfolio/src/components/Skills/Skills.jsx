@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './Skills.css'
 
-// Import all skill components
 import ProgrammingLanguages from './ProgrammingLanguages/ProgrammingLanguages'
 import Frameworks from './Frameworks/Frameworks'
 import Databases from './Databases/Databases'
@@ -12,7 +11,6 @@ import CloudServices from './CloudServices/CloudServices'
 
 function Skills() {
     const [selectedSkill, setSelectedSkill] = useState('programming-languages')
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false)
 
     const skills = [
         { id: 'programming-languages', name: 'Programming Languages', component: <ProgrammingLanguages /> },
@@ -26,8 +24,6 @@ function Skills() {
 
     const handleSkillClick = (skillId) => {
         setSelectedSkill(skillId)
-        // Close dropdown on mobile after selection
-        setIsDropdownOpen(false)
     }
 
 
