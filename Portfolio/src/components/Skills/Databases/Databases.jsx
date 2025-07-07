@@ -1,6 +1,5 @@
 import './Databases.css'
 import { SiMysql, SiPostgresql, SiMongodb, SiRedis, SiSqlite, SiFirebase, SiSnowflake, SiNeo4J, SiApachecassandra, SiAmazondynamodb } from 'react-icons/si'
-import { FaDatabase } from 'react-icons/fa6'
 import { DiMsqlServer } from "react-icons/di"
 
 const CosmosDBIcon = (props) => (
