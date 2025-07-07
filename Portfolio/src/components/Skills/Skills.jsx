@@ -12,6 +12,7 @@ import CloudServices from './CloudServices/CloudServices'
 
 function Skills() {
     const [selectedSkill, setSelectedSkill] = useState('programming-languages')
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false)
 
     const skills = [
         { id: 'programming-languages', name: 'Programming Languages', component: <ProgrammingLanguages /> },
@@ -25,16 +26,29 @@ function Skills() {
 
     const handleSkillClick = (skillId) => {
         setSelectedSkill(skillId)
+        // Close dropdown on mobile after selection
+        setIsDropdownOpen(false)
+    }
+
+    const toggleDropdown = () => {
+        setIsDropdownOpen(!isDropdownOpen)
     }
 
     const selectedComponent = skills.find(skill => skill.id === selectedSkill)?.component
+    const selectedSkillName = skills.find(skill => skill.id === selectedSkill)?.name
 
     return (
         <div className="skills" id="skills">
             <h1 className="Title">Skills</h1>
             <div className="skills-container">
                 <div className="skills-sidebar">
-                    <ul className="skills-list">
+                    {/* Mobile Dropdown Toggle */}
+                    <div className="skills-dropdown-toggle" onClick={toggleDropdown}>
+                        <span>{selectedSkillName}</span>
+                        <span className={`dropdown-arrow ${isDropdownOpen ? 'open' : ''}`}>▼</span>
+                    </div>
+
+                    <ul className={`skills-list ${isDropdownOpen ? 'dropdown-open' : ''}`}>
                         {skills.map((skill) => (
                             <li
                                 key={skill.id}

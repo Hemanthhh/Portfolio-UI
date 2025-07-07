@@ -24,8 +24,10 @@ import {
     SiJfrog,
     SiNpm,
     SiAnaconda,
+    SiSplunk,
+    SiPagerduty,
+    SiNewrelic,
 } from "react-icons/si"
-import { BsMicrosoftTeams } from "react-icons/bs";
 
 
 
@@ -55,7 +57,9 @@ function Tools() {
         { name: 'Confluence', icon: SiConfluence },
         { name: 'Excalidraw', icon: SiExcalidraw },
         { name: 'Slack', icon: SiSlack },
-        { name: 'Microsoft Teams', icon: BsMicrosoftTeams },
+        { name: 'Splunk', icon: SiSplunk },
+        { name: 'PagerDuty', icon: SiPagerduty },
+        { name: 'New Relic', icon: SiNewrelic }
     ]
 
     return (
