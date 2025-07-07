@@ -1,4 +1,4 @@
-#intro{
+#intro {
     height: 100vh;
     width: 100vw;
     max-width: 75rem;
@@ -6,7 +6,7 @@
     overflow: hidden;
 }
 
-.introContent{
+.introContent {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -15,20 +15,20 @@
     padding: 0 2rem;
 }
 
-.greetings{
+.greetings {
     color: #eb5939;
     font-size: x-large;
     font-weight: 600;
 }
 
-.name{
+.name {
     color: #d2c3ab;
     font-size: 5rem;
     font-weight: 1000;
     margin-bottom: 1rem;
 }
 
-.introText{
+.introText {
     /* color: #a8b2d1; */
     color: #b7ab98;
     font-size: 3rem;
@@ -36,7 +36,7 @@
     margin-bottom: 1rem;
 }
 
-.paragraph{
+.paragraph {
     font-size: medium;
     font-weight: 100;
     color: #d2c3ab;
@@ -49,8 +49,8 @@
     color: #eb5939;
     text-decoration: none;
     font-weight: 600;
-  }
-  
+}
+
 #companyURL::before {
     content: "";
     position: absolute;
@@ -63,7 +63,7 @@
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
-  
+
 #companyURL:hover::before {
     transform: scaleX(1);
 }
@@ -73,19 +73,19 @@
     .introContent {
         padding: 0 3rem;
     }
-    
+
     .greetings {
         font-size: 1.5rem;
     }
-    
+
     .name {
         font-size: 6rem;
     }
-    
+
     .introText {
         font-size: 3.5rem;
     }
-    
+
     .paragraph {
         font-size: 1.1rem;
         max-width: 700px;
@@ -97,19 +97,19 @@
     .introContent {
         padding: 0 1.5rem;
     }
-    
+
     .greetings {
         font-size: 1.2rem;
     }
-    
+
     .name {
         font-size: 4rem;
     }
-    
+
     .introText {
         font-size: 2.5rem;
     }
-    
+
     .paragraph {
         font-size: 1rem;
         max-width: 500px;
@@ -122,19 +122,19 @@
         padding: 0 1rem;
         text-align: center;
     }
-    
+
     .greetings {
         font-size: 1.1rem;
     }
-    
+
     .name {
         font-size: 3rem;
     }
-    
+
     .introText {
         font-size: 2rem;
     }
-    
+
     .paragraph {
         font-size: 0.9rem;
         max-width: 400px;
@@ -148,19 +148,19 @@
         padding: 0 0.8rem;
         text-align: center;
     }
-    
+
     .greetings {
         font-size: 1rem;
     }
-    
+
     .name {
         font-size: 2.5rem;
     }
-    
+
     .introText {
         font-size: 1.5rem;
     }
-    
+
     .paragraph {
         font-size: 0.8rem;
         max-width: 300px;
@@ -173,19 +173,19 @@
     .introContent {
         padding: 0 0.5rem;
     }
-    
+
     .greetings {
         font-size: 0.9rem;
     }
-    
+
     .name {
         font-size: 2rem;
     }
-    
+
     .introText {
         font-size: 1.2rem;
     }
-    
+
     .paragraph {
         font-size: 0.7rem;
         max-width: 250px;
