@@ -33,59 +33,9 @@
     align-items: center;
 }
 
-.cloud-card {
-    background: linear-gradient(135deg, #eb5939 0%, #d2c3ab 100%);
-    border-radius: 6px;
-    padding: 1.5rem;
-    text-align: center;
-    color: #0d0d0d;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    border: 1px solid #d2c3ab;
-}
-
-.cloud-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    display: block;
-}
-
-.cloud-card h3 {
-    margin: 0 0 1rem 0;
-    font-size: 1.3rem;
-    font-weight: 1000;
-}
-
-.level-badge {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 1000;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: #0d0d0d;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    margin-bottom: 1rem;
-    background-color: #f8f9fa;
-    border: 1px solid #d2c3ab;
-}
-
-.services-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    justify-content: center;
-}
-
-.service-tag {
-    display: inline-block;
-    padding: 0.3rem 0.6rem;
-    border-radius: 12px;
-    font-size: 0.8rem;
-    font-weight: 1000;
-    background-color: #f8f9fa;
-    color: #0d0d0d;
-    border: 1px solid #d2c3ab;
+.cloud-name {
+    font-size: 1.1rem;
+    font-weight: 300;
 }
 
 .skill-icon {
@@ -255,6 +205,10 @@
         font-size: 0.6rem;
         padding: 0.2rem 0.4rem;
     }
+
+    .cloud-name {
+        font-size: 0.8rem;
+    }
 }
 
 /* Extra small screens (up to 320px) */
@@ -293,6 +247,10 @@
         font-size: 0.5rem;
         padding: 0.15rem 0.3rem;
     }
+
+    .cloud-name {
+        font-size: 0.8rem;
+    }
 }
 
 .cloudservices-list {
@@ -312,6 +270,3 @@
     font-size: 1.1rem;
 }
 
-.cloud-name {
-    font-weight: 500;
-}

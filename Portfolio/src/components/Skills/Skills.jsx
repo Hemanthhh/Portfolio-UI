@@ -26,6 +26,9 @@ function Skills() {
         setSelectedSkill(skillId)
     }
 
+    const handleDropdownChange = (e) => {
+        setSelectedSkill(e.target.value)
+    }
 
     const selectedComponent = skills.find(skill => skill.id === selectedSkill)?.component
 
@@ -33,6 +36,19 @@ function Skills() {
         <div className="skills" id="skills">
             <h1 className="Title">Skills</h1>
             <div className="skills-container">
+                {/* Dropdown for mobile */}
+                <div className="skills-dropdown-mobile">
+                    <select
+                        className="skills-dropdown-select"
+                        value={selectedSkill}
+                        onChange={handleDropdownChange}
+                    >
+                        {skills.map((skill) => (
+                            <option key={skill.id} value={skill.id}>{skill.name}</option>
+                        ))}
+                    </select>
+                </div>
+                {/* Sidebar for desktop */}
                 <div className="skills-sidebar">
                     <ul className={"skills-list"}>
                         {skills.map((skill) => (

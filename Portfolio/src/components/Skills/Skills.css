@@ -250,3 +250,151 @@
         margin: 0.2rem;
     }
 }
+
+/* Hamburger menu styles */
+.skills-mobile-menu {
+    display: none;
+}
+.skills-hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    z-index: 1002;
+}
+.skills-hamburger svg {
+    display: block;
+}
+
+.skills-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1003;
+}
+.skills-close svg {
+    display: block;
+}
+
+/* Overlay styles for mobile menu */
+.skills-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(13, 13, 13, 0.85);
+    z-index: 1001;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.skills-sidebar-overlay {
+    background: #181818;
+    width: 80vw;
+    max-width: 320px;
+    height: 100vh;
+    box-shadow: -2px 0 12px rgba(0,0,0,0.3);
+    position: relative;
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 1002;
+    animation: slideInSidebar 0.2s ease;
+}
+@keyframes slideInSidebar {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+/* Hide sidebar and show hamburger on mobile */
+@media (max-width: 480px) {
+    .skills-sidebar {
+        display: none;
+    }
+    .skills-mobile-menu {
+        display: block;
+        position: relative;
+        z-index: 1002;
+    }
+    .skills-overlay {
+        display: flex;
+    }
+}
+
+/* Hide overlay and show sidebar on desktop */
+@media (min-width: 481px) {
+    .skills-overlay {
+        display: none !important;
+    }
+    .skills-mobile-menu {
+        display: none !important;
+    }
+    .skills-sidebar {
+        display: block;
+    }
+}
+
+/* Dropdown for mobile */
+.skills-dropdown-mobile {
+    display: none;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.skills-dropdown-select {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: 1px solid #d2c3ab;
+    background: transparent;
+    color: #b7ab98;
+    font-weight: inherit;
+    outline: none;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #0d0d0d;
+}
+.skills-dropdown-select option {
+    background-color: #0d0d0d;
+    color: #b7ab98;
+}
+
+.skills-dropdown-select:focus {
+    border-color: #eb5939;
+    box-shadow: 0 0 0 2px rgba(235, 89, 57, 0.15);
+    background-color: #0d0d0d;
+}
+
+@media (max-width: 480px) {
+    .skills-dropdown-mobile {
+        display: block;
+    }
+    .skills-sidebar {
+        display: none;
+    }
+}
+
+@media (min-width: 481px) {
+    .skills-dropdown-mobile {
+        display: none !important;
+    }
+    .skills-sidebar {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .skills-dropdown-select {
+        background-color: #0d0d0d;
+        color: #b7ab98;
+    }
+    .skills-dropdown-select option {
+        background-color: #0d0d0d;
+        color: #b7ab98;
+    }
+}

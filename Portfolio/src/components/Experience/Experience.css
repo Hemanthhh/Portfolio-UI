@@ -1,9 +1,9 @@
 .Experience {
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     max-width: 85rem;
     margin: 0 auto;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .Title{
@@ -13,6 +13,7 @@
     color: #b7ab98;
     font-size: 2.5rem;
     font-weight: 1000;
+    margin-bottom: 2rem;
 }
 
 .CompanyName{
@@ -45,7 +46,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
+    bottom: 1px;
     right: 0;
     background-color: #eb5939;
     border-radius: 6px;
