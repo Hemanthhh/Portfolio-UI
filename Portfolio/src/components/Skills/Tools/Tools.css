@@ -1,0 +1,315 @@
+.tools {
+    padding: 1rem;
+    color: #b7ab98;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.tools h1 {
+    color: #b7ab98;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.description {
+    color: #b7ab98;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.category-section {
+    margin-bottom: 3rem;
+}
+
+.category-section h2 {
+    color: #b7ab98;
+    font-size: 1.8rem;
+    font-weight: 1000;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eb5939;
+    display: inline-block;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.tool-card {
+    background: linear-gradient(135deg, #eb5939 0%, #d2c3ab 100%);
+    border-radius: 6px;
+    padding: 1.5rem;
+    text-align: center;
+    color: #0d0d0d;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid #d2c3ab;
+}
+
+.tool-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.tool-card h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 1000;
+}
+
+.level-badge {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 1000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #0d0d0d;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    background-color: #f8f9fa;
+    border: 1px solid #d2c3ab;
+}
+
+.skill-icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    display: inline-flex;
+    vertical-align: middle;
+    color: #b7ab98;
+}
+
+.skill-icon svg {
+    color: #b7ab98;
+}
+
+.skill-icon svg * {
+    color: #b7ab98 !important;
+}
+
+/* Specifically target AWS icons to override their built-in colors */
+.skill-icon svg path,
+.skill-icon svg rect,
+.skill-icon svg circle,
+.skill-icon svg polygon,
+.skill-icon svg g {
+    fill: #b7ab98 !important;
+    color: #b7ab98 !important;
+}
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+    .tools-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 2rem;
+    }
+
+    .tool-card {
+        padding: 2rem;
+    }
+
+    .tool-icon {
+        font-size: 3rem;
+    }
+
+    .tool-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .tools h1 {
+        font-size: 3rem;
+    }
+
+    .category-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+    }
+}
+
+/* Medium screens (768px to 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .tools-grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 1.2rem;
+    }
+
+    .tool-card {
+        padding: 1.2rem;
+    }
+
+    .tool-icon {
+        font-size: 2.2rem;
+    }
+
+    .tool-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .tools h1 {
+        font-size: 2.2rem;
+    }
+
+    .category-section h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Small screens (tablets - 481px to 767px) */
+@media (max-width: 767px) and (min-width: 481px) {
+    .tools-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 1rem;
+    }
+
+    .tool-card {
+        padding: 1rem;
+    }
+
+    .tool-icon {
+        font-size: 1.8rem;
+    }
+
+    .tool-card h3 {
+        font-size: 1rem;
+    }
+
+    .tools h1 {
+        font-size: 2rem;
+    }
+
+    .category-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .level-badge {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.6rem;
+    }
+}
+
+/* Mobile screens (up to 480px) */
+@media (max-width: 480px) {
+    .tools {
+        padding: 0.5rem;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        gap: 0.8rem;
+    }
+
+    .tool-card {
+        padding: 0.8rem;
+        border-radius: 4px;
+    }
+
+    .tool-icon {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .tool-card h3 {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .tools h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .category-section h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .level-badge {
+        font-size: 0.6rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .category-section {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Extra small screens (up to 320px) */
+@media (max-width: 320px) {
+    .tools-grid {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        gap: 0.5rem;
+    }
+
+    .tool-card {
+        padding: 0.6rem;
+    }
+
+    .tool-icon {
+        font-size: 1.1rem;
+    }
+
+    .tool-card h3 {
+        font-size: 0.7rem;
+    }
+
+    .tools h1 {
+        font-size: 1.5rem;
+    }
+
+    .category-section h2 {
+        font-size: 1rem;
+    }
+
+    .description {
+        font-size: 0.8rem;
+    }
+
+    .level-badge {
+        font-size: 0.5rem;
+        padding: 0.15rem 0.4rem;
+    }
+}
+
+.tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.tool-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #b7ab98;
+    font-size: 1.1rem;
+}
+
+.tool-name {
+    font-weight: 500;
+}

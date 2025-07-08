@@ -1,0 +1,250 @@
+.operating-systems {
+    padding: 1rem;
+    color: #b7ab98;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.operating-systems h1 {
+    color: #b7ab98;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.description {
+    color: #b7ab98;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* .os-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+} */
+
+/* .os-card {
+    background: linear-gradient(135deg, #eb5939 0%, #d2c3ab 100%);
+    border-radius: 6px;
+    padding: 1.5rem;
+    text-align: center;
+    color: #0d0d0d;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid #d2c3ab;
+} */
+
+.os-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.os-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #b7ab98;
+    font-size: 1.1rem;
+}
+
+.os-icon {
+    font-size: 1.5rem;
+}
+
+/* .os-card h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.3rem;
+    font-weight: 1000;
+} */
+
+.os-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.level-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 1000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #0d0d0d;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    background-color: #f8f9fa;
+    border: 1px solid #d2c3ab;
+}
+
+.experience-badge {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 1000;
+    background-color: #f8f9fa;
+    color: #0d0d0d;
+    border: 1px solid #d2c3ab;
+}
+
+.skill-icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    display: inline-flex;
+    vertical-align: middle;
+    color: #b7ab98;
+}
+
+.skill-icon svg {
+    color: #b7ab98;
+}
+
+.skill-icon * {
+    color: #b7ab98 !important;
+}
+
+/* Specifically target AWS icons to override their built-in colors */
+.skill-icon svg path,
+.skill-icon svg rect,
+.skill-icon svg circle,
+.skill-icon svg polygon,
+.skill-icon svg g {
+    fill: #b7ab98 !important;
+    color: #b7ab98 !important;
+}
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+    .os-list {
+        gap: 1.5rem;
+    }
+
+    .os-item {
+        font-size: 1.2rem;
+    }
+
+    .os-icon {
+        font-size: 1.8rem;
+    }
+
+    .operating-systems h1 {
+        font-size: 3rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+    }
+}
+
+/* Medium screens (768px to 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .os-list {
+        gap: 1.2rem;
+    }
+
+    .os-item {
+        font-size: 1.1rem;
+    }
+
+    .os-icon {
+        font-size: 1.6rem;
+    }
+
+    .operating-systems h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Small screens (tablets - 481px to 767px) */
+@media (max-width: 767px) and (min-width: 481px) {
+    .os-list {
+        gap: 1rem;
+    }
+
+    .os-item {
+        font-size: 1rem;
+    }
+
+    .os-icon {
+        font-size: 1.4rem;
+    }
+
+    .operating-systems h1 {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile screens (up to 480px) */
+@media (max-width: 480px) {
+    .operating-systems {
+        padding: 0.5rem;
+    }
+
+    .os-list {
+        gap: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .os-item {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .os-icon {
+        font-size: 1.2rem;
+    }
+
+    .operating-systems h1 {
+        font-size: 1.8rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra small screens (up to 320px) */
+@media (max-width: 320px) {
+    .os-list {
+        gap: 0.6rem;
+    }
+
+    .os-item {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .os-icon {
+        font-size: 1rem;
+    }
+
+    .operating-systems h1 {
+        font-size: 1.6rem;
+    }
+
+    .description {
+        font-size: 0.8rem;
+    }
+}
+
+.os-name {
+    font-weight: 500;
+}

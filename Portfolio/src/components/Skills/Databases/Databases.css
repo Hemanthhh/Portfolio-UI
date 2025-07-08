@@ -1,0 +1,232 @@
+.databases {
+    padding: 1rem;
+    color: #b7ab98;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.databases h1 {
+    color: #b7ab98;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.type-section {
+    margin-bottom: 2rem;
+}
+
+.type-section h2 {
+    color: #eb5939;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.databases-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.database-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.database-icon {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #eb5939;
+    background-color: rgba(235, 89, 57, 0.1);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    border: 1px solid #eb5939;
+}
+
+.database-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #b7ab98;
+}
+
+.skill-icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    display: inline-flex;
+    vertical-align: middle;
+    color: #b7ab98;
+}
+
+.skill-icon svg {
+    color: #b7ab98;
+}
+
+.skill-icon svg * {
+    color: #b7ab98 !important;
+}
+
+/* Specifically target AWS icons to override their built-in colors */
+.skill-icon svg path,
+.skill-icon svg rect,
+.skill-icon svg circle,
+.skill-icon svg polygon,
+.skill-icon svg g {
+    fill: #b7ab98 !important;
+    color: #b7ab98 !important;
+}
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+    .databases-list {
+        gap: 2rem;
+    }
+
+    .database-item {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .database-icon {
+        font-size: 1.3rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .database-name {
+        font-size: 1.2rem;
+    }
+
+    .databases h1 {
+        font-size: 3rem;
+    }
+
+    .type-section h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Medium screens (768px to 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .databases-list {
+        gap: 1.5rem;
+    }
+
+    .database-item {
+        padding: 0.6rem 1.2rem;
+    }
+
+    .database-icon {
+        font-size: 1rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .database-name {
+        font-size: 0.9rem;
+    }
+
+    .databases h1 {
+        font-size: 2.2rem;
+    }
+
+    .type-section h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Small screens (tablets - 481px to 767px) */
+@media (max-width: 767px) and (min-width: 481px) {
+    .databases-list {
+        gap: 1.2rem;
+    }
+
+    .database-item {
+        padding: 0.5rem 1rem;
+    }
+
+    .database-icon {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
+    }
+
+    .database-name {
+        font-size: 0.8rem;
+    }
+
+    .databases h1 {
+        font-size: 2rem;
+    }
+
+    .type-section h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Mobile screens (up to 480px) */
+@media (max-width: 480px) {
+    .databases {
+        padding: 0.5rem;
+    }
+
+    .databases-list {
+        gap: 1rem;
+    }
+
+    .database-item {
+        padding: 0.4rem 0.8rem;
+    }
+
+    .database-icon {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    .database-name {
+        font-size: 0.7rem;
+    }
+
+    .databases h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .type-section h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Extra small screens (up to 320px) */
+@media (max-width: 320px) {
+    .databases-list {
+        gap: 0.8rem;
+    }
+
+    .database-item {
+        padding: 0.3rem 0.6rem;
+    }
+
+    .database-icon {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.3rem;
+    }
+
+    .database-name {
+        font-size: 0.6rem;
+    }
+
+    .databases h1 {
+        font-size: 1.5rem;
+    }
+
+    .type-section h2 {
+        font-size: 1rem;
+    }
+}

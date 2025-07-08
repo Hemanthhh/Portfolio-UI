@@ -1,0 +1,212 @@
+.Experience {
+    height: 100vh;
+    width: 100%;
+    max-width: 85rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.Title{
+    margin: 0 auto;
+    text-align: center;
+    padding: 5%;
+    color: #b7ab98;
+    font-size: 2.5rem;
+    font-weight: 1000;
+    margin-bottom: 2rem;
+}
+
+.CompanyName{
+    font-size: 1rem;
+    font-weight: normal;
+    color: #b7ab98;
+}
+
+.WorkList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    list-style: none;
+    font-size: 2rem;
+    font-weight: 1000;
+    border-bottom: 1px solid #d2c3ab;
+    color: #b7ab98;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.WorkList::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 1px;
+    right: 0;
+    background-color: #eb5939;
+    border-radius: 6px;
+    z-index: -1;
+    transition: transform 1s ease;
+    transform: scaleY(0);
+}
+
+.WorkList:hover::before {
+    transform: scaleY(1);
+}
+
+.WorkList:hover{
+    color: #0d0d0d;
+    transform: translateY(-2px);
+}
+
+.WorkListItem{
+    padding: 0 1rem 1.5rem 1rem;
+    border-top: 3px;
+    border-bottom: 3px;
+    flex: 1;
+    color: #b7ab98;
+}
+
+.WorkListItem:first-child {
+    text-align: left;
+}
+
+.WorkListItem:last-child {
+    text-align: right;
+}
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+    .Title {
+        font-size: 3rem;
+        padding: 4%;
+    }
+    
+    .WorkList {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        font-size: 2.2rem;
+        max-width: 1200px;
+    }
+    
+    .WorkListItem {
+        padding: 0 1.5rem 2rem 1.5rem;
+    }
+    
+    .CompanyName {
+        font-size: 1.1rem;
+    }
+}
+
+/* Medium screens (768px to 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .Title {
+        font-size: 2.2rem;
+        padding: 3%;
+    }
+    
+    .WorkList {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        font-size: 1.8rem;
+        max-width: 98vw;
+    }
+    
+    .WorkListItem {
+        padding: 0 0.8rem 1.2rem 0.8rem;
+    }
+    
+    .CompanyName {
+        font-size: 0.9rem;
+    }
+}
+
+/* Small screens (tablets - 481px to 767px) */
+@media (max-width: 767px) and (min-width: 481px) {
+    .Experience {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .Title {
+        font-size: 2rem;
+        padding: 2%;
+    }
+    
+    .WorkList {
+        flex-direction: column;
+        align-items: stretch;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        font-size: 1.5rem;
+        max-width: 99vw;
+    }
+    
+    .WorkListItem {
+        padding: 0 0.5rem 1rem 0.5rem;
+        text-align: center !important;
+    }
+    
+    .CompanyName {
+        font-size: 0.8rem;
+    }
+}
+
+/* Mobile screens (up to 480px) */
+@media (max-width: 480px) {
+    .Experience {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .Title {
+        font-size: 1.8rem;
+        padding: 1.5%;
+    }
+    
+    .WorkList {
+        flex-direction: column;
+        align-items: stretch;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        font-size: 1.2rem;
+        max-width: 100vw;
+    }
+    
+    .WorkListItem {
+        padding: 0 0.2rem 0.7rem 0.2rem;
+        text-align: center !important;
+    }
+    
+    .CompanyName {
+        font-size: 0.7rem;
+    }
+}
+
+/* Extra small screens (up to 320px) */
+@media (max-width: 320px) {
+    .Title {
+        font-size: 1.5rem;
+        padding: 1%;
+    }
+    
+    .WorkList {
+        padding-left: 1vw;
+        padding-right: 1vw;
+        font-size: 1rem;
+        max-width: 100vw;
+    }
+    
+    .WorkListItem {
+        padding: 0 0.1rem 0.4rem 0.1rem;
+    }
+    
+    .CompanyName {
+        font-size: 0.6rem;
+    }
+}

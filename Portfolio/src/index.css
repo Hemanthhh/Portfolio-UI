@@ -3,19 +3,60 @@
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  color: #e6f1ff;
+  color: #b7ab98;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0a192f;
+  background-color: #0d0d0d;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: #b7ab98;
 }
 
-*{
+* {
   margin: 0;
-  padding:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 3.5em;
+  }
+}
+
+/* Medium screens (768px to 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  h1 {
+    font-size: 2.8em;
+  }
+}
+
+/* Small screens (tablets - 481px to 767px) */
+@media (max-width: 767px) and (min-width: 481px) {
+  h1 {
+    font-size: 2.2em;
+  }
+}
+
+/* Mobile screens (up to 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+}
+
+/* Extra small screens (up to 320px) */
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1.5em;
+  }
 }
