@@ -27,6 +27,7 @@ import {
     SiSplunk,
     SiPagerduty,
     SiNewrelic,
+    SiKibana,
 } from "react-icons/si"
 
 
@@ -59,7 +60,8 @@ function Tools() {
         { name: 'Slack', icon: SiSlack },
         { name: 'Splunk', icon: SiSplunk },
         { name: 'PagerDuty', icon: SiPagerduty },
-        { name: 'New Relic', icon: SiNewrelic }
+        { name: 'New Relic', icon: SiNewrelic },
+        { name: 'Kibana', icon: SiKibana }
     ]
 
     return (
