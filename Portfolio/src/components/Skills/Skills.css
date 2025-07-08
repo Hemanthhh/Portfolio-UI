@@ -28,10 +28,8 @@
 
 .skills-sidebar {
     width: 300px;
-    background-color: #0d0d0d;
     border-right: 1px solid #d2c3ab;
     padding: 2rem;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
     height: auto;
 }
 
