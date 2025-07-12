@@ -30,7 +30,7 @@ const SocialMedia = () => {
                 </div>
                 <div className="social-icons">
                     <a
-                        href="https://linkedin.com/in/hemanthh"
+                        href="https://linkedin.com/in/hemanthvarmae"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="social-icon linkedin"
