@@ -1,5 +1,4 @@
 import './Intro.css'
-import bg from '../../assets/background.jpeg'
 
 function Intro() {
     return (
