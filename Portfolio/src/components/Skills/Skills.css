@@ -1,9 +1,9 @@
 .Skills {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     max-width: 85rem;
     margin: 0 auto;
-    overflow: hidden;
+    padding: 2rem 0;
     margin-top: 0;
     padding-top: 0;
 }
@@ -179,8 +179,8 @@
 /* Mobile screens (up to 480px) */
 @media (max-width: 480px) {
     .Skills {
-        height: auto;
         min-height: 100vh;
+        padding: 1rem 0;
     }
 
     .skills-container {
@@ -255,6 +255,7 @@
 .skills-mobile-menu {
     display: none;
 }
+
 .skills-hamburger {
     background: none;
     border: none;
@@ -263,6 +264,7 @@
     margin-bottom: 1rem;
     z-index: 1002;
 }
+
 .skills-hamburger svg {
     display: block;
 }
@@ -276,6 +278,7 @@
     right: 1rem;
     z-index: 1003;
 }
+
 .skills-close svg {
     display: block;
 }
@@ -293,12 +296,13 @@
     align-items: flex-start;
     justify-content: flex-end;
 }
+
 .skills-sidebar-overlay {
     background: #181818;
     width: 80vw;
     max-width: 320px;
     height: 100vh;
-    box-shadow: -2px 0 12px rgba(0,0,0,0.3);
+    box-shadow: -2px 0 12px rgba(0, 0, 0, 0.3);
     position: relative;
     padding: 2.5rem 1.5rem 1.5rem 1.5rem;
     display: flex;
@@ -306,9 +310,15 @@
     z-index: 1002;
     animation: slideInSidebar 0.2s ease;
 }
+
 @keyframes slideInSidebar {
-    from { transform: translateX(100%); }
-    to { transform: translateX(0); }
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 /* Hide sidebar and show hamburger on mobile */
@@ -316,11 +326,13 @@
     .skills-sidebar {
         display: none;
     }
+
     .skills-mobile-menu {
         display: block;
         position: relative;
         z-index: 1002;
     }
+
     .skills-overlay {
         display: flex;
     }
@@ -331,9 +343,11 @@
     .skills-overlay {
         display: none !important;
     }
+
     .skills-mobile-menu {
         display: none !important;
     }
+
     .skills-sidebar {
         display: block;
     }
@@ -345,6 +359,7 @@
     width: 100%;
     margin-bottom: 1rem;
 }
+
 .skills-dropdown-select {
     width: 100%;
     padding: 0.7rem 1rem;
@@ -359,6 +374,7 @@
     margin-bottom: 0.5rem;
     background-color: #0d0d0d;
 }
+
 .skills-dropdown-select option {
     background-color: #0d0d0d;
     color: #b7ab98;
@@ -374,6 +390,7 @@
     .skills-dropdown-mobile {
         display: block;
     }
+
     .skills-sidebar {
         display: none;
     }
@@ -383,6 +400,7 @@
     .skills-dropdown-mobile {
         display: none !important;
     }
+
     .skills-sidebar {
         display: block;
     }
@@ -393,6 +411,7 @@
         background-color: #0d0d0d;
         color: #b7ab98;
     }
+
     .skills-dropdown-select option {
         background-color: #0d0d0d;
         color: #b7ab98;
