@@ -52,6 +52,12 @@
     transform: translateY(-2px);
 }
 
+.ExperienceItem:hover .DateColumn,
+.ExperienceItem:hover .RoleTitle,
+.ExperienceItem:hover .CompanyName {
+    color: #0d0d0d;
+}
+
 .ExperienceRow {
     display: flex;
     justify-content: space-between;
@@ -67,6 +73,7 @@
     font-size: 1.8rem;
     font-weight: 700;
     color: #b7ab98;
+    transition: color 0.3s ease;
 }
 
 .InfoColumn {
@@ -82,6 +89,7 @@
     font-weight: 700;
     color: #b7ab98;
     margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
 }
 
 .CompanyName {
@@ -89,6 +97,7 @@
     font-weight: 500;
     color: #b7ab98;
     opacity: 0.9;
+    transition: color 0.3s ease;
 }
 
 /* Large screens (1200px and up) */
