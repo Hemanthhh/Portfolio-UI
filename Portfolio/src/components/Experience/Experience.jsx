@@ -36,17 +36,16 @@ function Experience() {
     return (
         <div className="Experience" id="experience">
             <h1 className="Title">Experience</h1>
-            <ul>
+            <ul className="ExperienceList">
                 {workExperience.map((item) => (
-                    <li key={item.id} className="WorkListItem">
-                        <div className="WorkList">
-                            <div className="WorkListItem">{item.startDate + "-" + item.endDate}</div>
-                            <div className="WorkListItem">
-                                {item.role}
-                                <br />
-                                <div className="CompanyName">
-                                    {item.company}
-                                </div>
+                    <li key={item.id} className="ExperienceItem">
+                        <div className="ExperienceRow">
+                            <div className="DateColumn">
+                                {item.startDate} - {item.endDate}
+                            </div>
+                            <div className="InfoColumn">
+                                <div className="RoleTitle">{item.role}</div>
+                                <div className="CompanyName">{item.company}</div>
                             </div>
                         </div>
                     </li>
