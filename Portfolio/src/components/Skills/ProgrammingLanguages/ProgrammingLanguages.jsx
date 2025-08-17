@@ -1,11 +1,13 @@
 import './ProgrammingLanguages.css'
 import { FaJava, FaPython, FaJs, FaGolang } from "react-icons/fa6"
 import { SiDart, SiTypescript } from "react-icons/si"
+import { TbBrandCSharp } from "react-icons/tb"
 
 function ProgrammingLanguages() {
     const languages = [
         { name: 'Python', icon: FaPython },
         { name: 'Java', icon: FaJava },
+        { name: 'C Sharp', icon: TbBrandCSharp},
         { name: 'JavaScript', icon: FaJs },
         { name: 'TypeScript', icon: SiTypescript },
         { name: 'Go', icon: FaGolang },

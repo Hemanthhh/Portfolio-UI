@@ -18,6 +18,7 @@ import {
     SiGin,
     SiPytest,
     SiFlutter,
+    SiDotnet
 } from "react-icons/si"
 
 function Frameworks() {
@@ -33,6 +34,7 @@ function Frameworks() {
         { name: 'TensorFlow', icon: SiTensorflow },
         { name: 'PyTorch', icon: SiPytorch },
         { name: 'Keras', icon: SiKeras },
+        { name: '.Net', icon: SiDotnet},
         { name: 'React', icon: SiReact },
         { name: 'Angular', icon: FaAngular },
         { name: 'Django', icon: SiDjango },
