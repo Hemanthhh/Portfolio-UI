@@ -5,27 +5,34 @@ function Experience() {
     const workExperience = [
         {
             "id": 1,
-            "company": "U.S. Bank",
-            "startDate": "Aug 2022",
+            "company": "Oracle",
+            "startDate": "Oct 2025",
             "endDate": "Present",
-            "role": "Full Stack Developer"
+            "role": "Senior Member of Technical Staff"
         },
         {
             "id": 2,
+            "company": "U.S. Bank",
+            "startDate": "Aug 2022",
+            "endDate": "Sept 2025",
+            "role": "Full Stack Developer"
+        },
+        {
+            "id": 3,
             "company": "Microsoft",
             "startDate": "Mar 2022",
             "endDate": "Aug 2022",
             "role": "SDE - I"
         },
         {
-            "id": 3,
+            "id": 4,
             "company": "OCM Advisory Group",
             "startDate": "Sept 2021",
             "endDate": "Dec 2021",
             "role": "Software Engineering Intern"
         },
         {
-            "id": 4,
+            "id": 5,
             "company": "SharkNinja",
             "startDate": "Mar 2021",
             "endDate": "Sept 2021",

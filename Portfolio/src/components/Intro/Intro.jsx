@@ -8,9 +8,9 @@ function Intro() {
                 <span className="name">Hemanth Varma.</span><br />
                 <span className="introText">I am a Full Stack Developer</span><br />
                 <span className="paragraph">
-                    I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences. <br />
+                    I'm a software engineer specializing in building and designing exceptional digital experiences. <br />
                     Currently, I'm focused on building accessible, human-centered products at 
-                    <a href="https://www.usbank.com" id="companyURL">  U.S. Bank.</a>
+                    <a href="https://www.oracle.com" id="companyURL">  Oracle </a>
                 </span>
             </div>
         </div>
